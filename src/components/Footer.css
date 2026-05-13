@@ -19,7 +19,27 @@
 .footer-motto {
   color: var(--text-muted);
   font-family: var(--font-tech);
+  margin-bottom: 1.5rem;
+}
+
+.footer-contact-details {
   margin-bottom: 2rem;
+  font-family: var(--font-tech);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.contact-line {
+  margin-bottom: 0.5rem;
+}
+
+.contact-line a {
+  color: var(--text-main);
+  transition: color 0.3s ease;
+}
+
+.contact-line a:hover {
+  color: var(--primary-accent);
 }
 
 .footer-socials {
