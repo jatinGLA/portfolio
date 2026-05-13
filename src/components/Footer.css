@@ -1,0 +1,56 @@
+.footer {
+  background-color: #050505;
+  border-top: 1px solid var(--border-accent);
+  padding: 4rem 0 2rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 3rem;
+}
+
+.footer-title {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-motto {
+  color: var(--text-muted);
+  font-family: var(--font-tech);
+  margin-bottom: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--border-color);
+  color: var(--text-muted);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  border-color: var(--primary-accent);
+  color: var(--primary-accent);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(138, 3, 3, 0.3);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-tech);
+}

@@ -1,0 +1,78 @@
+.edu-achieve-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edu-card {
+  border-left: 4px solid var(--primary-accent);
+}
+
+.edu-degree {
+  color: var(--text-main);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.edu-institution {
+  color: var(--text-muted);
+  font-family: var(--font-tech);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.edu-duration {
+  display: inline-block;
+  background: rgba(138, 3, 3, 0.1);
+  color: var(--primary-accent);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid rgba(138, 3, 3, 0.3);
+  font-size: 0.8rem;
+  font-family: var(--font-tech);
+}
+
+.achievements-card {
+  height: 100%;
+}
+
+.achievements-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.achievements-list li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.achievements-list li:last-child {
+  margin-bottom: 0;
+}
+
+.achievements-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid var(--primary-accent);
+  transform: rotate(45deg);
+}
+
+@media (max-width: 900px) {
+  .edu-achieve-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

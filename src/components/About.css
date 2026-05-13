@@ -1,0 +1,26 @@
+.about {
+  position: relative;
+}
+
+.title-icon {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: var(--primary-accent);
+}
+
+.about-text-box {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  border-left: 4px solid var(--primary-accent);
+  background: linear-gradient(135deg, rgba(28, 26, 26, 0.9), rgba(10, 10, 10, 0.9));
+}
+
+.about-text-box p {
+  margin-bottom: 1.5rem;
+}
+
+.about-text-box p:last-child {
+  margin-bottom: 0;
+}

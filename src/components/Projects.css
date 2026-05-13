@@ -1,0 +1,71 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  color: var(--text-main);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-link {
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  color: var(--primary-accent);
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px var(--primary-accent));
+}
+
+.project-type {
+  font-family: var(--font-tech);
+  color: var(--primary-accent);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.project-points {
+  list-style-type: none;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.project-points li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.project-points li::before {
+  content: '♦';
+  position: absolute;
+  left: 0;
+  color: var(--primary-accent);
+  font-size: 1rem;
+  line-height: 1.2;
+}
